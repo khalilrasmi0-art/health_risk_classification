@@ -96,7 +96,23 @@ Then open: `http://localhost:8501`
 ## 📋 **TROUBLESHOOTING**
 
 ### Issue: "Page not found" on Netlify
-**Solution:** Netlify doesn't support Python/Streamlit apps. Use Streamlit Cloud instead.
+**Solution:** Netlify doesn't support Python/Streamlit apps directly. Use Streamlit Cloud instead.
+
+**Note:** Netlify redirect rules (like SPA redirects or _redirects files) are NOT applicable to this project. This is a backend Python application, not a static frontend site.
+
+### Issue: Model files not found when running locally
+**Solution:**
+1. Ensure you've run the ML pipeline first: `python health_risk_ml_pipeline.py`
+2. This generates: `best_model.pkl`, `preprocessing_info.pkl`, `feature_names.pkl`
+3. Then run: `streamlit run app.py`
+
+### Issue: Dependencies not installing
+**Solution:**
+```bash
+# Ensure you're in the project directory
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
 ### Issue: Dependencies not installing
 **Solution:** Ensure `requirements.txt` is in the root directory with compatible versions.

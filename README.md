@@ -88,7 +88,7 @@ weighted avg       0.97      0.97      0.97       200
 ## 🚀 Setup & Installation
 
 ### Prerequisites
-- Python 3.14+
+- Python 3.10+
 - Virtual Environment (recommended)
 
 ### Step 1: Create Virtual Environment

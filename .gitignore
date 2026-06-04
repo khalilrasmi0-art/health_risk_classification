@@ -3,6 +3,7 @@ venv/
 .venv/
 env/
 ENV/
+__pycache__/
 
 # Python Cache
 __pycache__/
@@ -22,6 +23,7 @@ build/
 *.swp
 *.swo
 *~
+.DS_Store
 
 # OS
 .DS_Store
@@ -39,3 +41,12 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# Cache
+*.cache
+.pytest_cache/
+.mypy_cache/
+
+# IDE Additional
+*.sublime-project
+*.sublime-workspace

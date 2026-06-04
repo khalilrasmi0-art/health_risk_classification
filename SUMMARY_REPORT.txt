@@ -1,0 +1,21 @@
+
+Dataset: 11_health_risk_classification_1000.csv
+Total Samples: 1000
+Total Features: 4
+
+Numeric Features: 4
+Categorical Features: 0
+
+Train Set Size: 800 (80%)
+Test Set Size: 200 (20%)
+
+Models Tested: 7
+Best Model: KNN Classifier
+Best Accuracy: 0.9750
+
+Output Files Generated:
+1. skewness_distribution.png - Distribution plots of all numeric features
+2. model_comparison_results.csv - Accuracy comparison table
+3. best_model.pkl - Trained best model (serialized)
+4. preprocessing_info.pkl - Preprocessing configuration
+5. feature_names.pkl - Feature names used in training

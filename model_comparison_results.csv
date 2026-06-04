@@ -1,0 +1,7 @@
+Model,Accuracy
+KNN Classifier,0.975
+KNeighbors Classifier,0.965
+SVC,0.95
+Logistic Regression,0.935
+Gaussian NB,0.92
+SGD Classifier,0.905
